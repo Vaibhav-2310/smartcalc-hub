@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+    transition:0.3s ease;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#141e30,#243b55);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:100%;
+    max-width:420px;
+    padding:40px;
+    border-radius:25px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    text-align:center;
+    color:white;
+    animation:float 3s ease-in-out infinite;
+}
+
+.card h1{
+    margin-bottom:20px;
+    font-size:40px;
+}
+
+.subtitle{
+    font-size:18px;
+    margin-bottom:15px;
+    opacity:0.8;
+    font-weight:400;
+}
+
+#todayDate{
+    margin-bottom:15px;
+    opacity:0.8;
+    font-size:14px;
+}
+
+.hint{
+    font-size:14px;
+    opacity:0.7;
+    margin-bottom:20px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+button{
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(to right,#0072ff,#00c6ff);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 20px rgba(0,198,255,0.4);
+}
+
+.reset-btn{
+    background:#555;
+}
+
+.reset-btn:hover{
+    box-shadow:0 5px 20px rgba(255,255,255,0.2);
+}
+
+.result{
+    margin-top:35px;
+}
+
+.result h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.result p{
+    font-size:22px;
+    margin:8px 0;
+    opacity:0.9;
+}
+
+footer{
+    margin-top:25px;
+    color:white;
+    font-size:14px;
+    opacity:0.7;
+    text-align:center;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .card{
+        padding:30px 20px;
+    }
+
+    .card h1{
+        font-size:32px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .result h2{
+        font-size:34px;
+    }
+
+    .result p{
+        font-size:20px;
+    }
+
+    button{
+        font-size:16px;
+    }
+
+}
