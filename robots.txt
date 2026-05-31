@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vaibhav-2310.github.io/age-calculator/sitemap.xml
