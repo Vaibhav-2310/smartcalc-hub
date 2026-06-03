@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        GST Calculator India | SmartCalc Hub
+    </title>
+
+    <meta name="description"
+        content="Free GST Calculator India. Calculate GST, Reverse GST, CGST, SGST and IGST instantly.">
+
+    <link rel="icon"
+        type="image/png"
+        href="logo.png">
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SmartCalc Hub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <h1>
+            GST Calculator India
+        </h1>
+
+        <p>
+            Calculate GST, Reverse GST,
+            CGST, SGST and IGST instantly.
+        </p>
+
+    </section>
+
+    <!-- ADD GST -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Add GST</h2>
+
+            <div class="input-box">
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter Amount">
+
+                <select id="gstRate">
+
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+
+                </select>
+
+                <button onclick="addGST()">
+                    Calculate GST
+                </button>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="gstAmount">
+                    ₹0
+                </h3>
+
+                <p>GST Amount</p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="finalAmount">
+                    ₹0
+                </h3>
+
+                <p>Final Amount</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- REMOVE GST -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Remove GST</h2>
+
+            <div class="input-box">
+
+                <input
+                    type="number"
+                    id="inclusiveAmount"
+                    placeholder="GST Inclusive Amount">
+
+                <select id="reverseRate">
+
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+
+                </select>
+
+                <button onclick="removeGST()">
+                    Remove GST
+                </button>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="originalAmount">
+                    ₹0
+                </h3>
+
+                <p>Original Amount</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CGST + SGST -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>CGST + SGST Split</h2>
+
+            <div class="input-box">
+
+                <input
+                    type="number"
+                    id="splitAmount"
+                    placeholder="Enter Amount">
+
+                <select id="splitRate">
+
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+
+                </select>
+
+                <button onclick="splitGST()">
+                    Split GST
+                </button>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="cgstResult">
+                    ₹0
+                </h3>
+
+                <p>CGST</p>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="sgstResult">
+                    ₹0
+                </h3>
+
+                <p>SGST</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- IGST -->
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>IGST Calculator</h2>
+
+            <div class="input-box">
+
+                <input
+                    type="number"
+                    id="igstAmount"
+                    placeholder="Enter Amount">
+
+                <select id="igstRate">
+
+                    <option value="5">5%</option>
+                    <option value="12">12%</option>
+                    <option value="18" selected>18%</option>
+                    <option value="28">28%</option>
+
+                </select>
+
+                <button onclick="calculateIGST()">
+                    Calculate IGST
+                </button>
+
+            </div>
+
+            <div class="result-card">
+
+                <h3 id="igstResult">
+                    ₹0
+                </h3>
+
+                <p>IGST Amount</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SEO CONTENT -->
+
+    <section class="seo-content">
+
+        <h2>
+            What is GST?
+        </h2>
+
+        <p>
+            GST (Goods and Services Tax) is an indirect tax
+            applied on the supply of goods and services in India.
+            It replaced multiple indirect taxes and simplified
+            the taxation system.
+        </p>
+
+        <h2>
+            GST Slabs in India
+        </h2>
+
+        <ul>
+
+            <li>5% GST</li>
+            <li>12% GST</li>
+            <li>18% GST</li>
+            <li>28% GST</li>
+
+        </ul>
+
+        <h2>
+            Types of GST
+        </h2>
+
+        <ul>
+
+            <li>CGST - Central GST</li>
+
+            <li>SGST - State GST</li>
+
+            <li>IGST - Integrated GST</li>
+
+        </ul>
+
+        <h2>
+            Frequently Asked Questions
+        </h2>
+
+        <h3>
+            How do I calculate GST?
+        </h3>
+
+        <p>
+            GST is calculated by multiplying
+            the amount with the GST percentage.
+        </p>
+
+        <h3>
+            What is Reverse GST?
+        </h3>
+
+        <p>
+            Reverse GST helps find the original
+            amount before GST was added.
+        </p>
+
+        <h3>
+            What is the difference between
+            CGST, SGST and IGST?
+        </h3>
+
+        <p>
+            CGST and SGST are used for intra-state
+            transactions while IGST applies to
+            inter-state transactions.
+        </p>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 SmartCalc Hub
+        </p>
+
+        <div class="footer-links">
+
+            <a href="privacy-policy.html">
+                Privacy Policy
+            </a>
+
+            |
+
+            <a href="terms.html">
+                Terms
+            </a>
+
+        </div>
+
+    </footer>
+
+    <script src="gst.js"></script>
+
+</body>
+
+</html>
