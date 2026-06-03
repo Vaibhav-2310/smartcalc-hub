@@ -32,7 +32,14 @@ function calculateAge() {
 
     if (days < 0) {
         months--;
-        days += 30;
+
+        const previousMonth = new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            0
+        ).getDate();
+
+        days += previousMonth;
     }
 
     if (months < 0) {
@@ -40,14 +47,14 @@ function calculateAge() {
         months += 12;
     }
 
+    // Total days lived
     const diffTime = today - birthDate;
 
-    const totalDays =
-        Math.floor(
-            diffTime /
-            (1000 * 60 * 60 * 24)
-        );
+    const totalDays = Math.floor(
+        diffTime / (1000 * 60 * 60 * 24)
+    );
 
+    // Next Birthday
     let nextBirthday = new Date(
         today.getFullYear(),
         birthDate.getMonth(),
@@ -63,40 +70,37 @@ function calculateAge() {
     const remainingTime =
         nextBirthday - today;
 
-    const remainingDays =
-        Math.ceil(
-            remainingTime /
-            (1000 * 60 * 60 * 24)
-        );
+    const remainingDays = Math.ceil(
+        remainingTime /
+        (1000 * 60 * 60 * 24)
+    );
 
-    document.getElementById("years").innerHTML =
-        `${years} Years`;
+    // Update Result Cards
+    document.getElementById("years").innerText =
+        years;
 
-    document.getElementById("months").innerHTML =
-        `${months} Months`;
+    document.getElementById("months").innerText =
+        months;
 
-    document.getElementById("days").innerHTML =
-        `${days} Days`;
+    document.getElementById("days").innerText =
+        days;
 
     document.getElementById("totalDays").innerHTML =
-        `Total Days Lived: ${totalDays}`;
+        `Total Days Lived: <strong>${totalDays}</strong>`;
 
     document.getElementById("birthday").innerHTML =
-        `Next Birthday In: ${remainingDays} Days`;
+        `Next Birthday In: <strong>${remainingDays} Days</strong>`;
 }
 
 function resetForm() {
 
     document.getElementById("dob").value = "";
 
-    document.getElementById("years").innerHTML =
-        "0 Years";
+    document.getElementById("years").innerText = "0";
 
-    document.getElementById("months").innerHTML =
-        "0 Months";
+    document.getElementById("months").innerText = "0";
 
-    document.getElementById("days").innerHTML =
-        "0 Days";
+    document.getElementById("days").innerText = "0";
 
     document.getElementById("totalDays").innerHTML =
         "Total Days Lived: 0";
