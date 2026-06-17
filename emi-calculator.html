@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EMI Calculator | Calculate Loan EMI Online</title>
+
+    <meta name="description"
+        content="Free EMI Calculator to calculate monthly EMI, total payment and total interest instantly.">
+
+    <meta name="keywords"
+        content="EMI Calculator, Loan EMI Calculator, EMI Calculator Online">
+
+    <meta name="author" content="Vaibhav">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="EMI Calculator | SmartCalc Hub">
+
+    <meta property="og:description"
+        content="Calculate monthly EMI, total payment and interest instantly.">
+
+    <meta property="og:type"
+        content="website">
+
+    <!-- Canonical URL -->
+    <link rel="canonical"
+        href="https://vaibhav-2310.github.io/age-calculator/emi-calculator.html">
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            SmartCalc Hub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>🏦 EMI Calculator</h1>
+
+            <h2 class="subtitle">
+                Calculate Your Monthly Loan EMI
+            </h2>
+
+            <div class="input-box">
+
+                <input type="number"
+                    id="loanAmount"
+                    placeholder="Loan Amount (₹)">
+
+                <input type="number"
+                    id="interestRate"
+                    placeholder="Interest Rate (%)">
+
+                <input type="number"
+                    id="loanTenure"
+                    placeholder="Loan Tenure (Years)">
+
+                <button onclick="calculateEMI()">
+                    Calculate EMI
+                </button>
+
+                <button onclick="resetEMI()">
+                    Reset
+                </button>
+
+            </div>
+
+            <div class="result">
+
+                <h2 id="emiResult">
+                    Monthly EMI: ₹0
+                </h2>
+
+                <p id="totalPayment">
+                    Total Payment: ₹0
+                </p>
+
+                <p id="totalInterest">
+                    Total Interest: ₹0
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="seo-content">
+
+        <h2>What is an EMI Calculator?</h2>
+
+        <p>
+            An EMI calculator helps borrowers estimate their monthly
+            loan payments based on loan amount, interest rate and tenure.
+        </p>
+
+        <h2>Benefits of Using an EMI Calculator</h2>
+
+        <ul>
+            <li>Plan your finances better</li>
+            <li>Compare different loan offers</li>
+            <li>Estimate monthly repayments instantly</li>
+            <li>Understand total interest payable</li>
+        </ul>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 SmartCalc Hub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="emi.js"></script>
+
+</body>
+
+</html>
