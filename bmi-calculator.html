@@ -11,13 +11,66 @@
     <meta name="description"
         content="Free BMI Calculator. Calculate your Body Mass Index instantly and check if you are underweight, normal, overweight or obese.">
 
-    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="keywords"
+        content="BMI Calculator, Body Mass Index Calculator, Health Calculator, BMI Check">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="author"
+        content="Vaibhav">
+
+    <meta name="robots"
+        content="index, follow">
+
+    <meta name="theme-color"
+        content="#243b55">
+
+    <!-- Open Graph -->
+
+    <meta property="og:title"
+        content="BMI Calculator | SmartCalc Hub">
+
+    <meta property="og:description"
+        content="Calculate your Body Mass Index instantly and check your health category.">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:image"
+        content="logo.png">
+
+    <meta property="og:url"
+        content="https://vaibhav-2310.github.io/smartcalc-hub/bmi-calculator.html">
+
+    <!-- Canonical URL -->
+
+    <link rel="canonical"
+        href="https://vaibhav-2310.github.io/smartcalc-hub/bmi-calculator.html">
+
+    <!-- Favicon -->
+
+    <link rel="icon"
+        type="image/png"
+        href="logo.png">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1JRK9W2HY"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-V1JRK9W2HY');
+        </script>
 
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
 
     <nav class="navbar">
 
@@ -28,16 +81,22 @@
         <div class="nav-links">
 
             <a href="index.html">Home</a>
+
             <a href="about.html">About</a>
+
             <a href="contact.html">Contact</a>
 
         </div>
 
     </nav>
 
+    <!-- HERO -->
+
     <section class="hero">
 
-        <h1>BMI Calculator</h1>
+        <h1>
+            BMI Calculator
+        </h1>
 
         <p>
             Calculate your Body Mass Index instantly.
@@ -45,25 +104,27 @@
 
     </section>
 
+    <!-- CALCULATOR -->
+
     <div class="container">
 
         <div class="card">
 
-            <h2>Enter Your Details</h2>
+            <h2>
+                Enter Your Details
+            </h2>
 
             <div class="input-box">
 
                 <input
                     type="number"
                     id="weight"
-                    placeholder="Weight (kg)"
-                >
+                    placeholder="Weight (kg)">
 
                 <input
                     type="number"
                     id="height"
-                    placeholder="Height (cm)"
-                >
+                    placeholder="Height (cm)">
 
                 <button onclick="calculateBMI()">
                     Calculate BMI
@@ -71,8 +132,7 @@
 
                 <button
                     class="reset-btn"
-                    onclick="resetBMI()"
-                >
+                    onclick="resetBMI()">
                     Reset
                 </button>
 
@@ -112,49 +172,76 @@
 
     </div>
 
+    <!-- SEO CONTENT -->
+
     <section class="seo-content">
 
-        <h2>What is BMI?</h2>
+        <h2>
+            What is BMI?
+        </h2>
 
         <p>
-            BMI (Body Mass Index) is a measurement that uses your height
-            and weight to estimate whether your body weight falls within
-            a healthy range.
+            BMI (Body Mass Index) is a measurement that uses
+            your height and weight to estimate whether your
+            body weight falls within a healthy range.
         </p>
 
-        <h2>BMI Categories</h2>
+        <h2>
+            BMI Categories
+        </h2>
 
         <ul>
+
             <li>Below 18.5 – Underweight</li>
+
             <li>18.5 to 24.9 – Normal Weight</li>
+
             <li>25 to 29.9 – Overweight</li>
+
             <li>30 and Above – Obese</li>
+
         </ul>
 
-        <h2>Benefits of Using BMI Calculator</h2>
+        <h2>
+            Benefits of Using BMI Calculator
+        </h2>
 
         <ul>
+
             <li>Quick health assessment</li>
+
             <li>Easy to use</li>
+
             <li>Free online tool</li>
+
             <li>Mobile friendly</li>
+
         </ul>
 
-        <h2>Frequently Asked Questions</h2>
+        <h2>
+            Frequently Asked Questions
+        </h2>
 
-        <h3>Is BMI accurate?</h3>
+        <h3>
+            Is BMI accurate?
+        </h3>
 
         <p>
-            BMI is a useful indicator but it does not directly measure body fat.
+            BMI is a useful indicator but it does not directly
+            measure body fat.
         </p>
 
-        <h3>Is this BMI calculator free?</h3>
+        <h3>
+            Is this BMI calculator free?
+        </h3>
 
         <p>
             Yes, it is completely free to use.
         </p>
 
     </section>
+
+    <!-- FOOTER -->
 
     <footer>
 
@@ -163,6 +250,18 @@
         </p>
 
         <div class="footer-links">
+
+            <a href="about.html">
+                About
+            </a>
+
+            |
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+            |
 
             <a href="privacy-policy.html">
                 Privacy Policy
