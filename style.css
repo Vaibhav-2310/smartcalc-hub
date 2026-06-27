@@ -381,4 +381,14 @@ footer a:hover {
             color: #38bdf8 !important;
             text-decoration: underline;
         }
+
+        /* Related Calculator Links */
+        .seo-content ul li a,
+        .seo-content ul li a:visited,
+        .seo-content ul li a:hover,
+        .seo-content ul li a:active {
+            color: white !important;
+            text-decoration: none;
+            font-weight: 600;
+        }
 }
