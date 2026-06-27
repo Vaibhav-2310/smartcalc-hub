@@ -7,12 +7,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(
-        135deg,
-        #0f172a,
-        #1e3a8a,
-        #2563eb
-    );
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
     color: white;
 }
 
@@ -70,7 +65,6 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto 60px;
-
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -80,13 +74,10 @@ body {
 .stat-card {
     min-width: 220px;
     padding: 25px;
-
     text-align: center;
-
     background: rgba(255, 255, 255, 0.10);
     border: 1px solid rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(10px);
-
     border-radius: 20px;
 }
 
@@ -101,11 +92,8 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto 60px;
-
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
-
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
 }
 
@@ -113,33 +101,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     min-height: 120px;
     padding: 30px;
-
     text-align: center;
-
     background: rgba(255, 255, 255, 0.10);
     border: 1px solid rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(10px);
-
     border-radius: 20px;
-
     font-size: 20px;
     font-weight: 600;
-
     color: white !important;
     text-decoration: none !important;
-
     transition: 0.3s;
-}
-
-.tool-card:link,
-.tool-card:visited,
-.tool-card:hover,
-.tool-card:active {
-    color: white !important;
-    text-decoration: none !important;
 }
 
 .tool-card:hover {
@@ -159,17 +132,12 @@ body {
 .card {
     width: 100%;
     max-width: 550px;
-
     padding: 35px;
-
     text-align: center;
-
     background: rgba(255, 255, 255, 0.10);
     border: 1px solid rgba(255, 255, 255, 0.20);
     backdrop-filter: blur(10px);
-
     border-radius: 20px;
-
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -192,27 +160,17 @@ input,
 select {
     width: 100%;
     padding: 15px;
-
     border: none;
     border-radius: 12px;
-
     font-size: 16px;
     outline: none;
 }
 
 button {
     padding: 15px;
-
     border: none;
     border-radius: 12px;
-
-    background:
-        linear-gradient(
-            to right,
-            #0072ff,
-            #00c6ff
-        );
-
+    background: linear-gradient(to right, #0072ff, #00c6ff);
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -236,12 +194,9 @@ button {
 
 .result-card {
     padding: 20px;
-
     text-align: center;
-
     background: rgba(255, 255, 255, 0.08);
     border-radius: 15px;
-
     transition: 0.3s;
 }
 
@@ -266,9 +221,7 @@ button {
 .seo-content {
     width: 90%;
     max-width: 900px;
-
     margin: 60px auto;
-
     line-height: 1.8;
 }
 
@@ -283,6 +236,19 @@ button {
 
 .seo-content ul {
     padding-left: 20px;
+}
+
+.seo-content ul li a,
+.seo-content ul li a:visited,
+.seo-content ul li a:hover,
+.seo-content ul li a:active {
+    color: white !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.seo-content ul li a:hover {
+    opacity: 0.85;
 }
 
 /* ================= FOOTER ================= */
@@ -348,104 +314,4 @@ footer a:hover {
         min-height: 100px;
         font-size: 18px;
     }
-
-            /* ==========================
-        FORCE WHITE TEXT ON CARDS
-        ========================== */
-
-        .tool-card,
-        .tool-card a,
-        .tools-grid a,
-        .related-tools a {
-            color: white !important;
-            text-decoration: none;
-        }
-
-        .tool-card:hover,
-        .tool-card a:hover,
-        .tools-grid a:hover,
-        .related-tools a:hover {
-            color: #ffffff !important;
-        }
-
-                .seo-content a,
-        .related-tools a,
-        .related-tools ul li a {
-            color: white !important;
-            text-decoration: none;
-        }
-
-        .seo-content a:hover,
-        .related-tools a:hover,
-        .related-tools ul li a:hover {
-            color: #38bdf8 !important;
-            text-decoration: underline;
-        }
-
-        /* Related Calculator Links */
-        .seo-content ul li a,
-        .seo-content ul li a:visited,
-        .seo-content ul li a:hover,
-        .seo-content ul li a:active {
-            color: white !important;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        /* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .stats {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stat-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .result-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tool-card {
-        min-height: 100px;
-        font-size: 18px;
-    }
-}
-
-        /* ================= RELATED CALCULATOR LINKS ================= */
-
-        .seo-content ul li a,
-        .seo-content ul li a:link,
-        .seo-content ul li a:visited,
-        .seo-content ul li a:hover,
-        .seo-content ul li a:active {
-            color: #ffffff !important;
-            text-decoration: none !important;
-            font-weight: 600;
-        }
-
-        .seo-content ul li a:hover {
-            opacity: 0.85;
-        }
 }
