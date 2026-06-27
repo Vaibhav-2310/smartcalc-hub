@@ -348,4 +348,24 @@ footer a:hover {
         min-height: 100px;
         font-size: 18px;
     }
+
+            /* ==========================
+        FORCE WHITE TEXT ON CARDS
+        ========================== */
+
+        .tool-card,
+        .tool-card a,
+        .tools-grid a,
+        .related-tools a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        .tool-card:hover,
+        .tool-card a:hover,
+        .tools-grid a:hover,
+        .related-tools a:hover {
+            color: #ffffff !important;
+        }
+        
 }
