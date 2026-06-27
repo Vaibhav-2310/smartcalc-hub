@@ -367,5 +367,18 @@ footer a:hover {
         .related-tools a:hover {
             color: #ffffff !important;
         }
-        
+
+                .seo-content a,
+        .related-tools a,
+        .related-tools ul li a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        .seo-content a:hover,
+        .related-tools a:hover,
+        .related-tools ul li a:hover {
+            color: #38bdf8 !important;
+            text-decoration: underline;
+        }
 }
